@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Proyecto en C++</title>
+</head>
+
+<body>
+    <h1>Pagina de Proyectos en C++</h1>
+    <p>C++ es un lenguaje de programación muy utilizado para el desarrollo de sistemas, juegos y aplicaciones de alto
+        rendimiento. Ofrece un gran control sobre los recursos informáticos.</p>
+    <div class="projetos">
+        <h2>Ejemplos de Proyectos</h2>
+        <p>Proyecto de quarto medio para la feria de ciencias de 2023 de la Scuola Italiana.<br>
+             Calculadora de huella de carbono desarrollada en C++. El programa analiza el
+            consumo de electricidad, los hábitos alimenticios y el número de vehículos familiares para estimar su
+            impacto ambiental. El proyecto utiliza variables, entrada de datos, estructuras condicionales y cálculos
+            para generar el resultado final de la huella de carbono. </p>
+        <pre><code>#include <iostream>
+
+using namespace std;
+
+int main() {
+    int consumoElectrico;
+    int numPersonas;
+    int numVehiculos;
+    double huellaAlimentacion;
+    double huellaEnergia;
+    double huellaTotal;
+
+    // Pregunta sobre el consumo eléctrico en tu casa
+    cout << "Ingrese su consumo eléctrico promedio mensual (en kilovatios-hora): ";
+    cin >> consumoElectrico;
+
+    // Pregunta sobre el número de personas en tu hogar
+    cout << "Ingrese el número de personas que viven en su casa: ";
+    cin >> numPersonas;
+
+    // Pregunta sobre el número de vehículos que posees
+    cout << "Ingrese el número de vehículos en su hogar: ";
+    cin >> numVehiculos;
+
+    // Cálculo de la huella de carbono en base a la alimentación
+    cout << "\nHábitos de alimentación:" << endl;
+    cout << "1. Dieta vegetariana" << endl;
+    cout << "2. Dieta mixta" << endl;
+    cout << "3. Dieta alta en carne" << endl;
+    cout << "Ingrese el número correspondiente a su elección: ";
+    int opcionAlimentacion;
+    cin >> opcionAlimentacion;
+
+    if (opcionAlimentacion == 1) {
+        huellaAlimentacion = 2.0;
+    } else if (opcionAlimentacion == 2) {
+        huellaAlimentacion = 3.0;
+    } else if (opcionAlimentacion == 3) {
+        huellaAlimentacion = 5.0;
+    } else {
+        cout << "Opción inválida. Se asumirá una dieta mixta." << endl;
+        huellaAlimentacion = 3.0;
+    }
+
+    // Cálculo de la huella de carbono en base al gasto energético
+    huellaEnergia = consumoElectrico / numPersonas;
+
+    // Cálculo de la huella de carbono total
+    huellaTotal = huellaAlimentacion + huellaEnergia + (numVehiculos * 2.3);
+
+    // Mostrar el resultado
+    cout << "\n--- Resultado ---" << endl;
+    cout << "Su huella de carbono por hábitos de alimentación es: " << huellaAlimentacion << endl;
+    cout << "Su huella de carbono por gasto energético en su casa es: " << huellaEnergia << endl;
+    cout << "Su huella de carbono por vehículos es: " << (numVehiculos * 2.3) << endl;
+    cout << "Su huella de carbono total es: " << huellaTotal << endl;
+
+    return 0;
+}
+</code></pre>
+    </div>
+</body>
+
+<footer>
+    <a href="index.html">Voltar</a>
+</footer>
+
+</html>

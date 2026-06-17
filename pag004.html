@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Roblox Studio</title>
+</head>
+
+<body>
+    <h1>Pagina de proyectos en Roblox Studio</h1>
+    <p>Roblox Studio te permite crear juegos usando el lenguaje de programación Lua.
+        Es una excelente herramienta para aprender programación y desarrollo de videojuegos.</p>
+<div class="projetos">
+      <h2>Exemplo de Script Lua</h2>
+
+<pre><code>
+script.Parent.Touched:Connect(function(hit)
+
+local character = hit.Parent
+
+while character and not character:FindFirstChild("Humanoid") do
+character = character.Parent
+end
+
+if character then
+print("Jogador tocou o checkpoint!")
+end
+script.Parent.Color = Color3.fromRGB(0, 255, 0)
+script.Parent.Material = Enum.Material.Neon
+script.Parent.Touched:Connect(function(hit)
+
+local humanoid = hit.Parent:FindFirstChildOfClass("Humanoid")
+
+if humanoid then
+script.Parent.BrickColor = BrickColor.new("Lime green")
+print("Checkpoint alcançado!")
+end
+while true do
+script.Parent.Orientation =
+script.Parent.Orientation + Vector3.new(0, 1, 0)
+
+wait(0.03)
+end
+end)
+end)
+</code></pre>
+</div>
+    </body>
+<footer>
+    <a href="index.html">Voltar</a>
+</footer>
+
+</html>

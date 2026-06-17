@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mi Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="topo-site">
+        <div class="identidad">
+            <img src="img/img.png" alt="Logo Daniela" class="logo">
+        </div>
+        <div class="carrossel">
+            <div class="carrossel-trilho">
+                <div class="slide"><img src="img/projeto1.jpg" alt="Projeto 1"></div>
+                <div class="slide"><img src="img/projeto2.jpg" alt="Projeto 2"></div>
+                <div class="slide"><img src="img/projeto3.jpg" alt="Projeto 3"></div>
+                <div class="slide"><img src="img/projeto1.jpg" alt="Projeto 1"></div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#sobremi" class="fs-4"> Sobre mi</a></li>
+            <li><a href="#proyectos" class="fs-4"> Proyectos</a></li>
+            <li><a href="#habilidades" class="fs-4"> Habilidades</a></li>
+            <li><a href="#contacto" class="fs-4">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="d-flex flex-wrap gap-3">
+
+        <div id="sobremi" class="border border-light rounded-5 p-4 caixa-personalizada" style="width:48%;">
+            <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="img/dany.png" alt="foto Daniela" width="80" class="img-fluid rounded mb-3">
+                <h2 class="mb-0">Sobre mí</h2>
+            </div>
+            <p>
+                Me llamo Daniela Agondi.Me gusta desarrollar software especializado
+                en C++ y criar soluciones creativas y funcionales.
+            </p>
+        </div>
+
+        <div id="proyectos" class="border border-light rounded-5 p-4 caixa-personalizada" style="width:48%;">
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="img/proyecto.jpg" alt="foto proyecto" width="80" class="img-fluid rounded mb-3">
+                <h2 class="mb-0">Proyectos</h2>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne">
+                            Sitios web
+                        </button>
+                    </h3>
+
+                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionFlushExample">
+
+                        <div class="accordion-body">
+                            <a href="pag005.html">
+                                <p>Proyectos desarrollados en HTML y CSS.</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo">
+                            Programación
+                        </button>
+                    </h3>
+
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="pag002.html">C++</a></li>
+                                <li><a href="pag003.html">VB</a></li>
+                                <li><a href="pag004.html">Roblox</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="habilidades" class="border border-light rounded-5 p-4 w-100 caixa-personalizada">
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="img/habil.jpg" alt="foto Habilidades" width="80" class="img-fluid rounded mb-3">
+                <h2 class="mb-0">Habilidades</h2>
+            </div>
+
+            <p>
+                Educación + Tecnología, Liderazgo + Comunicación,
+                Experiencia internacional (Brasil y Chile),
+                Idiomas (portugués, español e inglés).
+            </p>
+
+        </div>
+
+        
+        <div id="contacto" class="border border-light rounded-5 p-4 w-100 caixa-personalizada">
+            <div class="d-flex align-items-center gap-3 mb-3"></div>
+            <h2>Contacto</h2>
+        </div>
+        <p>
+            📧 Email:
+            <a href="mailto:danielareginarivas@gmail.com">
+                danielareginarivas@gmail.com
+            </a>
+        </p>
+        <p>
+            💼 LinkedIn:
+            <a href="https://www.linkedin.com/in/danielareginaribeiro/" target="_blank">
+                linkedin.com/in/danielareginaribeiro
+            </a>
+        </p>
+        <p>
+            💻 GitHub:
+            <a href="https://github.com/danielareginarivas-ux" target="_blank">
+                github.com/danielareginarivas-ux
+            </a>
+        </p>
+        <div class="redes mt-4">
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/danielareginaribeiro/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/danielareginarivas-ux" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>©2026 Daniela Agondi.</p>
+        <p>Portafolio de Tecnología y Educación</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

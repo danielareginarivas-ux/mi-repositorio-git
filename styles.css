@@ -1,0 +1,189 @@
+header {
+  background-color: #F8F1F4(240, 231, 238);
+  img-align: center;
+}
+ul#menu {
+  list-style: none;
+  text-transform:capitalize;
+}
+ul#menu a{
+  text-decoration: none;
+}
+ul#menu a:hover{
+  color:#9a83c8
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #B76E79; padding: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  transition: background-color 1s;
+  padding: 10px;
+  
+}
+
+nav ul li a {
+  text-decoration: wavy;
+  color: #4A2C2A;
+  padding: 10px;
+}
+
+
+body {
+  font-family: cursive;
+  margin: 5;
+  padding: 0;
+  background-color: #f7e3eb;
+}
+
+footer {
+  background-color: #5d3939;
+  color: #9a83c8;
+  padding: 10px;
+  text-align: center;
+}
+a {
+  color:#9a83c8
+}
+.caixa-personalizada {
+background-color:#f3d4e1;
+ border: 2px solid #744d55;
+}
+
+.caixa-personalizada img {
+    width: 90px;
+}
+
+.projetos pre {
+    background: #222;
+    color: #0f0;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+    text-align: left;
+}
+html {
+    scroll-behavior: smooth;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes a {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+}
+
+.topo-site {
+  background-color: #F8F1F4; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px 40px;
+  gap: 30px;
+}
+
+.identidade .logo {
+  width: 70px; 
+  height: auto;
+  border-radius: 50%;
+}
+
+.identidade h1 {
+  font-family: cursive; 
+  color: #4A2C2A;
+  margin: 0;
+  font-size: 28px;
+}
+
+
+.carrossel {
+  width: 300px; 
+  height: 120px; 
+  overflow: hidden; 
+  border-radius: 10px;
+  border: 2px solid #744d55; }
+
+.carrossel-trilho {
+  display: flex;
+  width: 400%; 
+  animation: rolarCarrossel 12s infinite linear;
+}
+
+
+.slide {
+  width: 100%;
+}
+
+.slide img {
+  width: 300px;
+  height: 120px;
+  object-fit: cover; 
+}
+
+
+@keyframes rolarCarrossel {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(0); }
+  30% { transform: translateX(-25%); } 
+  55% { transform: translateX(-25%); }
+  60% { transform: translateX(-50%); }
+  85% { transform: translateX(-50%); }
+  90% { transform: translateX(-75%); } 
+  100% { transform: translateX(-75%); }
+}
+/* Fundo do acordeón */
+.accordion-button {
+    background-color: #d8c5f2;
+    color: #4A2C2A;
+    font-weight: bold;
+}
+
+/* Quando estiver aberto */
+.accordion-button:not(.collapsed) {
+    background-color: #bfa3e6;
+    color: #4A2C2A;
+}
+
+/* Corpo do acordeón */
+.accordion-body {
+    background-color: #f3e8ff;
+}
+
+/* Remove a borda azul padrão do Bootstrap */
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+.accordion-item {
+    border: 1px solid #9a83c8;
+}
+.accordion-button {
+    background-color: #e6d4f5;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #c9a7eb;
+}
+
+.accordion-body {
+    background-color: #f7e3eb;
+}

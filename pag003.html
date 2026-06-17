@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Visual Basic</title>
+</head>
+
+<body>
+    <h1> Pagina de proyectos en VB</h1>
+    <p>Visual Basic es un lenguaje creado por Microsoft para facilitar el desarrollo de aplicaciones con interfaz
+        gráfica de forma rápida e intuitiva.</p>
+    <div class="projetos">
+        <h2>Exemplos de Projetos</h2>
+
+        <p>Este proyecto se desarrolló en Visual Basic para automatizar el cálculo de los promedios de los estudiantes
+            en una hoja de cálculo de Excel.<br> El programa recorre una lista de estudiantes, suma sus calificaciones,
+            calcula el promedio final y determina automáticamente si cada estudiante aprobó o reprobó.
+            Para realizar esta tarea, el código utiliza estructuras de repetición (For...Next) para iterar por las filas
+            y columnas de la hoja de cálculo, almacenando y procesando los valores de las calificaciones. Después de
+            calcular el promedio de cada estudiante, una estructura condicional (If...Else) verifica si el promedio es
+            mayor o igual a 6. Si es así, el estudiante recibe el estado "Aprobado"; de lo contrario, recibe el estado
+            "Reprobado".
+            Este proyecto demuestra conceptos importantes de programación, como variables, bucles de repetición,
+            condicionales, operaciones matemáticas y manipulación de datos en hojas de cálculo, lo que hace que el
+            proceso de evaluación sea más rápido y eficiente.
+            Este proyecto se desarrolló en Visual Basic para automatizar el cálculo de los promedios de los estudiantes
+            en una hoja de cálculo de Excel.</p>
+
+        <pre><code>Sub CalcularPromedioYEstado()
+Dim i As Integer &#39; Variable para el bucle de alumnos
+Dim j As Integer &#39; Variable para el bucle de notas
+Dim sumaNotas As Double &#39; Variable para almacenar la suma de las notas
+Dim promedio As Double &#39; Variable para el promedio de las notas
+&#39; Bucle para recorrer los alumnos
+For i = 3 To 7 &#39; Fila 3 a fila 7 (suponiendo que los alumnos están en las
+filas 3 a 7)
+&#39; Inicializamos la suma de notas
+sumaNotas = 0
+&#39; Bucle para sumar las notas
+For j = 2 To 5 &#39; Columna 2 a columna 5 (suponiendo que las notas están
+en las columnas B a E)
+sumaNotas = sumaNotas + Cells(i, j).Value
+Next j
+&#39; Calculamos el promedio
+promedio = sumaNotas / 4
+&#39; Determinamos si aprobó o reprobó
+If promedio &gt;= 6 Then
+Cells(i, 6).Value = &quot;Aprobado&quot;
+Else
+Cells(i, 6).Value = &quot;Reprobado&quot;
+End If
+Next i
+End Sub
+</code></pre>
+</body>
+<footer>
+    <a href="index.html">Voltar</a>
+</footer>
+
+</html>
